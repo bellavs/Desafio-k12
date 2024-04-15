@@ -1,0 +1,149 @@
+
+  .login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(173, 87, 207, 0.739);
+}
+
+.login-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(52, 1, 72, 0.975);
+    max-height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(104, 17, 139, 0.487) 0px 30px 90px;
+}
+
+.login-form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 34px;
+}
+
+/*checkbox to switch from sing up to login*/
+
+#chk {
+    display: none;
+}
+
+/*Login*/
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 2% 0 7%;
+}
+
+label {
+    color: #fff;
+    font-size: 2.5rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    background: #e0dede;
+    padding: 15px;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*Register*/
+
+.register {
+    background: #eee;
+    border-radius: 80% / 10%;
+    transition: .8s ease-in-out;
+}
+
+.register label {
+    color: #6d07b0;
+    transform: scale(.8);
+}
+
+#chk:checked ~ .register {
+    transform: translateY(-68%);
+}
+
+#chk:checked ~.register label {
+    transform: scale(1);
+    margin-bottom: .7rem;
+}
+
+#chk:checked ~.login label {
+    transform: sacle(.6);
+}
+
+/*Button*/
+
+.login-form button {
+    width: 70%;
+    height: 50px;
+    margin: 10px auto 10%;
+    color: #fff;
+    background: rgba(136, 21, 182, 0.838);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.login-form button:hover {
+    background-color: rgba(119, 21, 157, 0.838);
+}
+  
+  .header {
+    background: #a5c;
+    padding-inline: 1px;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 94px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+
+    width: 70px;
+  height: 190px;
+  left: 100px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+  }
+  
